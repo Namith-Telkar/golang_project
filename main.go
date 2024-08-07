@@ -3,37 +3,22 @@ package main
 import "fmt"
 
 func main() {
-	// var nameOne string = "Jon"
-	// var nameTwo = "Arya"
-	// var nameThree string
+	fmt.Print("Hello, World!")
+	fmt.Println("Bye World!")
+	fmt.Println(":D")
 
-	// fmt.Println(nameOne, nameTwo, nameThree)
+	name := "Namith"
+	age := 23
 
-	// nameThree = "Sansa"
+	fmt.Println("My name is", name, "and I am", age, "years old.")
+	
+	fmt.Printf("My name is %v and I am %v years old.\n", name, age)
+	fmt.Printf("My name is %q and I am %vqyears old.\n", name, age)
+	fmt.Printf("age is of type %T\n", age)
+	fmt.Printf("You scored %0.1f points!\n", 225.55)
 
-	// fmt.Println(nameOne, nameTwo, nameThree)
-
-	// nameFour := "Bran"
-
-	// fmt.Println(nameOne, nameTwo, nameThree, nameFour)
-
-	// ints
-	var ageOne int = 20
-	var ageTwo = 30
-	ageThree := 40
-
-	fmt.Println(ageOne, ageTwo, ageThree)
-
-	// bits & memory
-	// var numbOne int8 = 25
-	// var numbTwo int8 = -128
-	// var numbThree uint8 = 255
-
-	var scoreOne float32 = 25.98
-	var scoreTwo float64 = 3567465754.98
-	scroreThree := 25.98
-
-	fmt.Println(scoreOne, scoreTwo, scroreThree)
+	var str string = fmt.Sprintf("My name is %v and I am %v years old.\n", name, age)
+	fmt.Printf("The saved string is: %v", str)
 
 
 }
