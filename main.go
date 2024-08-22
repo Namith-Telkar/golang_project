@@ -2,27 +2,31 @@ package main
 
 import (
 	"fmt"
-	"sort"
-	"strings"
 )
 
 func main() {
-	greeting := "Hello, world!"
+	// x := 0
 
-	fmt.Println(strings.Contains(greeting, "Hello"))
-	fmt.Println(strings.ReplaceAll(greeting, "Hello", "Hi"))
-	fmt.Println(strings.ToUpper(greeting))
-	fmt.Println(strings.Index(greeting, "lo"))
-	fmt.Println(strings.Split(greeting, ","))
+	// for x < 5 {
+	// 	fmt.Println("Value of x is:", x)
+	// 	x++
+	// }
+	
+	// for i:=0; i<5; i++ {
+	// 	fmt.Println("The Value of i is:", i)
+	// }
 
-	ages := []int{20, 25, 30, 35, 40, 24, 28, 32, 36, 42}
-	sort.Ints(ages)
-	fmt.Println(ages)
-	index := sort.SearchInts(ages, 80)
-	fmt.Println(index)
+	names := []string{"John", "Robb", "Sansa", "Arya", "Bran"}
 
-	names := []string{"John", "Paul", "George", "Ringo"}
-	sort.Strings(names)
-	fmt.Println(names)
+	// for i:=0; i<len(names); i++{
+	// 	fmt.Println(names[i])
+	// }
 
+	// for index, value := range names{
+	// 	fmt.Printf("The value at index %v is %v\n", index, value)
+	// }
+
+	for _, value := range names{
+		fmt.Printf("The value is %v \n", value)
+	}
 }
